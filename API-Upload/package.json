@@ -1,0 +1,25 @@
+{
+  "name": "api-upload",
+  "version": "1.0.0",
+  "description": "api para upload de imagem (mobile)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "API",
+    "UPLOAD",
+    "IMAGEM",
+    "ANDROID"
+  ],
+  "author": "Mateus Bispo Ramos",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "fs": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
