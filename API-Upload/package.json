@@ -1,19 +1,13 @@
 {
   "name": "api-upload",
   "version": "1.0.0",
-  "description": "api para upload de imagem (mobile)",
+  "description": "EXEMPLO DE APIN PARA UPLOAD",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js"
   },
-  "keywords": [
-    "API",
-    "UPLOAD",
-    "IMAGEM",
-    "ANDROID"
-  ],
-  "author": "Mateus Bispo Ramos",
+  "author": "CRISTIANO CORREA DE MORAES",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.1",
