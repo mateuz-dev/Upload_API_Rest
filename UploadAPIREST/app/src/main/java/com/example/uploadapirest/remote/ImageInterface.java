@@ -9,5 +9,8 @@ public interface ImageInterface {
 
     @FormUrlEncoded
     @POST("/testeUpload")
-    Call<String> uploadImage(@Field("file") String file);
+    Call<String> uploadImage(
+            @Field("file") String file,
+            @Field("titulo") String titulo
+    );
 }

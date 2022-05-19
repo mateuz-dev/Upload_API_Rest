@@ -85,8 +85,12 @@ public class MainActivity extends AppCompatActivity {
     private void uploadImageRetrofit(Bitmap bitmap) {
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
         bitmap.compress(Bitmap.CompressFormat.JPEG, 100, byteArrayOutputStream);
+
+        String titulo = txtTitulo.getText().toString();
         String file = Base64.encodeToString(byteArrayOutputStream.toByteArray(), Base64.DEFAULT);
-        Call<String> call = imageInterface.uploadImage(file);
+
+        Call<String> call = imageInterface.uploadImage(file, titulo);
+
         call.enqueue(new Callback<String>() {
             @Override
             public void onResponse(Call<String> call, Response<String> response) {
